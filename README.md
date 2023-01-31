@@ -11,7 +11,7 @@ git clone https://github.com/atenreiro/opensquat # opensquat 다운로드
 pip3 install -r requirements.txt # opensquat 설치에 필요한 패키지 설치
 ```
 ---
-### 2) /opensquat/output.py 수정
+### 2) /opensquat/opensquat/output.py 수정
 #### - 수정 전
 ---
 ```py
@@ -42,4 +42,19 @@ def as_text(self):
         for item in self.content:
             f.write('http://' + item + "\n") # item 앞에 'http://'추가
     f.close()
+```
+### 3) /opensquat/keywords.txt 수정
+#### - 수정 전
+```txt
+#This is a comment
+google
+facebook
+amazon
+paypal
+microsoft
+```
+#### - 수정 후
+```txt
+#This is a comment
+기업도메인명 입력
 ```
