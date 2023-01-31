@@ -1,18 +1,13 @@
 #-*- coding:utf-8 -*-
 import os
-import re
 import urllib.request
-import logging, requests, json, random
+import requests, json, random
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 from slack_sdk.webhook import WebhookClient
 
 slack_web_hook_url = "[Input Slack Web Hook URL]"
 webhook = WebhookClient(slack_web_hook_url)
-
-# logging
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
 
 ## slack 함수 ##
 
