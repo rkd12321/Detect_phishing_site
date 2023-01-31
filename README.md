@@ -12,4 +12,34 @@ pip3 install -r requirements.txt # opensquat 설치에 필요한 패키지 설�
 ```
 ---
 ### 2) /opensquat/output.py 수정
+#### - 수정 전
 ---
+```py
+def as_text(self):
+    """
+    save to plain text.
+    Args:
+        none
+    Return
+        none
+    """
+    with open(self.filename, "w") as f:
+        for item in self.content:
+            f.write(item + "\n")
+    f.close()
+```
+#### - 수정 후
+```py
+def as_text(self):
+    """
+    save to plain text.
+    Args:
+        none
+    Return
+        none
+    """
+    with open(self.filename, "w") as f:
+        for item in self.content:
+            f.write('http://' + item + "\n") # item 앞에 'http://'추가
+    f.close()
+```
