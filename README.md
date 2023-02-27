@@ -57,5 +57,5 @@ microsoft
 #### - 수정 후
 ```txt
 #This is a comment
-검색하고자 하는 도메인명 입력 #ex) naver, kakao, daum ...
+검색하고자 하는 도메인명 입력 # ex) naver, kakao, daum ...
 ```
