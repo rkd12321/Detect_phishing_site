@@ -8,6 +8,7 @@ opensquat : 키워드와 유사한 도메인을 찾아주는 오픈소스<br>
 ```bash
 sudo yum isntall python3 pip3 # python3 및 pip3 설치
 git clone https://github.com/atenreiro/opensquat # opensquat 다운로드
+cd opensquat # opensquat 디렉토리 이동
 pip3 install -r requirements.txt # opensquat 설치에 필요한 패키지 설치
 ```
 ---
